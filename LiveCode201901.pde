@@ -44,7 +44,7 @@ class Square {
   
   void init() {
     rot = random(TWO_PI);
-    rotd = random(-.02, .02);
+    rotd = random(-.03, .03);
     z = -600 + random(300);;
     c = color((int)random(64, 256), (int)random(64, 256), (int)random(64, 256));
     rx = random(TWO_PI);
