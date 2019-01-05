@@ -31,7 +31,7 @@ static float MAX_SPEED = .02;
 static float SIZE = 20;
 
 class Square {
-  float x, y, z;
+  float x, y, z, zd;
   color c;
   float rx, ry, rz;
   float dx, dy, dz;
@@ -54,6 +54,7 @@ class Square {
     dy = random(-MAX_SPEED, MAX_SPEED);
     dz = random(-MAX_SPEED, MAX_SPEED);
     s = random(SIZE / 2, SIZE);
+    zd = random(1, 4);
   }
   
   void move() {
@@ -63,7 +64,7 @@ class Square {
     rot += rotd;
     x = 50 * cos(rot);
     y = 50 * sin(rot);
-    z++;
+    z += zd;
     //println(z);
     if (z > 100) {
       init();
