@@ -27,10 +27,10 @@ class Square {
   color c;
   float rx, ry, rz;
   float dx, dy, dz;
+  float rot = 0;
   
   Square() {
-    x = random(100);
-    y = random(100);
+    rot = random(TWO_PI);
     z = -400 + random(300);;
     c = color((int)random(64, 256), (int)random(64, 256), (int)random(64, 256));
     rx = random(TWO_PI);
@@ -45,6 +45,10 @@ class Square {
     rx += dx;
     ry += dy;
     rz += dz;
+    rot += .02;
+    x = 100 * cos(rot);
+    y = 100 * sin(rot);
+
     pushMatrix();
     noStroke();
     fill(c);
