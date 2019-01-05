@@ -51,10 +51,10 @@ class Square {
     rotateY(ry);
     rotateZ(rz);
     beginShape();
-    vertex(-10, -10);
-    vertex(-10, 10);
-    vertex(10, 10);
-    vertex(10, -10);
+    vertex(-SIZE, -SIZE);
+    vertex(-SIZE, SIZE);
+    vertex(SIZE, SIZE);
+    vertex(SIZE, -SIZE);
     endShape();
     popMatrix();
   }
