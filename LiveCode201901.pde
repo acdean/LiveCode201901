@@ -20,6 +20,8 @@ void draw() {
 }
 
 static float MAX_SPEED = .02;
+static float SIZE = 20;
+
 class Square {
   float x, y, z;
   color c;
@@ -43,6 +45,7 @@ class Square {
     ry += dy;
     rz += dz;
     pushMatrix();
+    noStroke();
     fill(c);
     rotateX(rx);
     rotateY(ry);
