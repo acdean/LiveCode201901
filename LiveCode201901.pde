@@ -1,4 +1,6 @@
 import peasy.*;
+import processing.opengl.*;
+import com.jogamp.opengl.*;  // new jogl - 3.0b7
 
 int COUNT = 20;
 int SYM = 12;
