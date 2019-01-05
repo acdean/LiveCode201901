@@ -90,3 +90,7 @@ class Square {
   }
   
 }
+
+void keyPressed() {
+  saveFrame("tunnel_####.png");
+}
