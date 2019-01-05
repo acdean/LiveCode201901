@@ -18,11 +18,11 @@ void draw() {
   for (Square square : squares) {
     square.move();
   }
-  for (float r = 0 ; r < 12 ; r++) {
+  for (float r = 0 ; r < 10 ; r++) {
     for (Square square : squares) {
       square.draw();
     }
-    rotateZ(TWO_PI / 6);
+    rotateZ(TWO_PI / 10);
   }
   popMatrix();
 }
