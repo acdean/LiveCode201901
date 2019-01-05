@@ -34,6 +34,9 @@ class Square {
   }
   
   void draw() {
+    rx += dx;
+    ry += dy;
+    rz += dz;
     pushMatrix();
     fill(c);
     rotateX(rx);
