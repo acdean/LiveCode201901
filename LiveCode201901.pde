@@ -14,12 +14,14 @@ void setup() {
 
 void draw() {
   background(0);
+  pushMatrix();
   for (float r = 0 ; r < 12 ; r++) {
     for (Square square : squares) {
       square.draw();
     }
-    rotateZ(TWO_PI / 12);
+    rotateZ(TWO_PI / 6);
   }
+  popMatrix();
 }
 
 static float MAX_SPEED = .02;
