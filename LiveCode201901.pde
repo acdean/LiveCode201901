@@ -16,10 +16,12 @@ class Square {
   Square() {
     x = random(100);
     y = random(100);
+    c = color((int)random(192, 256), (int)random(192, 256), (int)random(192, 256));
   }
   
   void draw() {
     pushMatrix();
+    fill(c);
     beginShape();
     vertex(-10, -10);
     vertex(-10, 10);
