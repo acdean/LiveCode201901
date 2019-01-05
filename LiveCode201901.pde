@@ -103,5 +103,5 @@ class Square {
 }
 
 void keyPressed() {
-  saveFrame("tunnel_####.png");
+  saveFrame("frame_####.png");
 }
