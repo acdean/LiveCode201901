@@ -49,13 +49,21 @@ class Square {
     dz = random(-MAX_SPEED, MAX_SPEED);
   }
   
-  void draw() {
+  void move() {
     rx += dx;
     ry += dy;
     rz += dz;
     rot += .02;
     x = 50 * cos(rot);
     y = 50 * sin(rot);
+    z++;
+    //println(z);
+    if (z > 100) {
+      z = -400 + random(300);;
+    }
+  }
+  
+  void draw() {
 
     pushMatrix();
     noStroke();
@@ -71,10 +79,6 @@ class Square {
     vertex(SIZE, -SIZE, 0);
     endShape();
     popMatrix();
-    z++;
-    //println(z);
-    if (z > 100) {
-      z = -400 + random(300);;
-    }
   }
+  
 }
