@@ -36,6 +36,7 @@ class Square {
   float rx, ry, rz;
   float dx, dy, dz;
   float rot = 0, rotd;
+  float s;
   
   Square() {
     init();
@@ -52,6 +53,7 @@ class Square {
     dx = random(-MAX_SPEED, MAX_SPEED);
     dy = random(-MAX_SPEED, MAX_SPEED);
     dz = random(-MAX_SPEED, MAX_SPEED);
+    s = random(SIZE / 2, SIZE);
   }
   
   void move() {
