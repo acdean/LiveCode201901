@@ -32,7 +32,7 @@ class Square {
     x = random(100);
     y = random(100);
     z = -300;
-    c = color((int)random(192, 256), (int)random(192, 256), (int)random(192, 256));
+    c = color((int)random(64, 256), (int)random(64, 256), (int)random(64, 256));
     rx = random(TWO_PI);
     ry = random(TWO_PI);
     rz = random(TWO_PI);
