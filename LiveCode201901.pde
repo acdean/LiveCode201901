@@ -54,7 +54,7 @@ class Square {
     dy = random(-MAX_SPEED, MAX_SPEED);
     dz = random(-MAX_SPEED, MAX_SPEED);
     s = random(SIZE / 2, SIZE);
-    zd = random(1, 4);
+    zd = random(2, 5);
   }
   
   void move() {
