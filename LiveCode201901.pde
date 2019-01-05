@@ -35,7 +35,7 @@ class Square {
   color c;
   float rx, ry, rz;
   float dx, dy, dz;
-  float rot = 0;
+  float rot = 0, rotd;
   
   Square() {
     init();
@@ -43,6 +43,7 @@ class Square {
   
   void init() {
     rot = random(TWO_PI);
+    rotd = random(-.02, .02);
     z = -600 + random(300);;
     c = color((int)random(64, 256), (int)random(64, 256), (int)random(64, 256));
     rx = random(TWO_PI);
@@ -57,7 +58,7 @@ class Square {
     rx += dx;
     ry += dy;
     rz += dz;
-    rot += .02;
+    rot += rotd;
     x = 50 * cos(rot);
     y = 50 * sin(rot);
     z++;
