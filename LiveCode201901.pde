@@ -38,6 +38,10 @@ class Square {
   float rot = 0;
   
   Square() {
+    init();
+  }
+  
+  void init() {
     rot = random(TWO_PI);
     z = -400 + random(300);;
     c = color((int)random(64, 256), (int)random(64, 256), (int)random(64, 256));
@@ -59,7 +63,7 @@ class Square {
     z++;
     //println(z);
     if (z > 100) {
-      z = -400 + random(300);;
+      init();
     }
   }
   
