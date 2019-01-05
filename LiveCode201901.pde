@@ -14,8 +14,11 @@ void setup() {
 
 void draw() {
   background(0);
-  for (Square square : squares) {
-    square.draw();
+  for (float r = 0 ; r < 12 ; r++) {
+    for (Square square : squares) {
+      square.draw();
+    }
+    rotateX(TWO_PI / 12);
   }
 }
 
