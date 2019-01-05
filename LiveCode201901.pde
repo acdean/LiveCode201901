@@ -17,16 +17,23 @@ void draw() {
 class Square {
   float x, y, z;
   color c;
+  float rx, ry, rz;
   
   Square() {
     x = random(100);
     y = random(100);
     c = color((int)random(192, 256), (int)random(192, 256), (int)random(192, 256));
+    rx = random(TWO_PI);
+    ry = random(TWO_PI);
+    rz = random(TWO_PI);
   }
   
   void draw() {
     pushMatrix();
     fill(c);
+    rotateX(rx);
+    rotateY(ry);
+    rotateZ(rz);
     beginShape();
     vertex(-10, -10);
     vertex(-10, 10);
