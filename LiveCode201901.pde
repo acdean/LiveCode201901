@@ -65,7 +65,7 @@ class Square {
     dx = random(-MAX_SPEED, MAX_SPEED);
     dy = random(-MAX_SPEED, MAX_SPEED);
     dz = random(-MAX_SPEED, MAX_SPEED);
-    s = random(SIZE / 2, SIZE);
+    s = random(SIZE / 4, SIZE);
     zd = random(2, 5);
   }
   
