@@ -14,6 +14,7 @@ void draw() {
   square.draw();
 }
 
+static float MAX_SPEED = .02;
 class Square {
   float x, y, z;
   color c;
@@ -26,6 +27,9 @@ class Square {
     rx = random(TWO_PI);
     ry = random(TWO_PI);
     rz = random(TWO_PI);
+    dx = random(-MAX_SPEED, MAX_SPEED);
+    dy = random(-MAX_SPEED, MAX_SPEED);
+    dz = random(-MAX_SPEED, MAX_SPEED);
   }
   
   void draw() {
