@@ -88,7 +88,6 @@ class Square {
     endShape();
     popMatrix();
   }
-  
 }
 
 void keyPressed() {
