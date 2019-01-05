@@ -1,17 +1,22 @@
 import peasy.*;
 
-Square square;
+int COUNT = 20;
+ArrayList<Square> squares = new ArrayList<Square>();
 PeasyCam cam;
 
 void setup() {
   size(1000, 1000, P3D);
-  square = new Square();
+  for (int i = 0 ; i < COUNT ; i++) {
+    squares.append(new Square());
+  }
   cam = new PeasyCam(this, 100);
 }
 
 void draw() {
   background(0);
-  square.draw();
+  for (Square square : squares) {
+    square.draw();
+  }
 }
 
 static float MAX_SPEED = .02;
