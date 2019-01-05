@@ -7,7 +7,7 @@ PeasyCam cam;
 void setup() {
   size(1000, 1000, P3D);
   for (int i = 0 ; i < COUNT ; i++) {
-    squares.append(new Square());
+    squares.add(new Square());
   }
   cam = new PeasyCam(this, 100);
 }
