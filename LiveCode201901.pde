@@ -18,7 +18,7 @@ void draw() {
     for (Square square : squares) {
       square.draw();
     }
-    rotateX(TWO_PI / 12);
+    rotateZ(TWO_PI / 12);
   }
 }
 
