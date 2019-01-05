@@ -60,8 +60,9 @@ class Square {
     endShape();
     popMatrix();
     z++;
-    if (z == 00) {
-      z = -200;
+    println(z);
+    if (z > 0) {
+      z = -400 + random(300);;
     }
   }
 }
