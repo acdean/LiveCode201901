@@ -60,7 +60,7 @@ class Square {
     endShape();
     popMatrix();
     z++;
-    if (z == 100) {
+    if (z == 00) {
       z = -200;
     }
   }
