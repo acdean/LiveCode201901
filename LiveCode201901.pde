@@ -1,7 +1,12 @@
+import peasy.*;
+
 Square square;
+PeasyCam cam;
 
 void setup() {
   size(1000, 1000, P3D);
+  square = new Square();
+  cam = new PeasyCam(this, 100);
 }
 
 void draw() {
