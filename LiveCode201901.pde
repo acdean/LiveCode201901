@@ -46,8 +46,8 @@ class Square {
     ry += dy;
     rz += dz;
     rot += .02;
-    x = 100 * cos(rot);
-    y = 100 * sin(rot);
+    x = 50 * cos(rot);
+    y = 50 * sin(rot);
 
     pushMatrix();
     noStroke();
