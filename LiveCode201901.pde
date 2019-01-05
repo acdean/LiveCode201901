@@ -1,6 +1,7 @@
 import peasy.*;
 
 int COUNT = 20;
+int SYM = 12;
 ArrayList<Square> squares = new ArrayList<Square>();
 PeasyCam cam;
 
@@ -18,11 +19,11 @@ void draw() {
   for (Square square : squares) {
     square.move();
   }
-  for (float r = 0 ; r < 10 ; r++) {
+  for (float r = 0 ; r < SYM ; r++) {
     for (Square square : squares) {
       square.draw();
     }
-    rotateZ(TWO_PI / 10);
+    rotateZ(TWO_PI / SYM);
   }
   popMatrix();
 }
