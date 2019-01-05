@@ -15,6 +15,9 @@ void setup() {
 void draw() {
   background(0);
   pushMatrix();
+  for (Square square : squares) {
+    square.move();
+  }
   for (float r = 0 ; r < 12 ; r++) {
     for (Square square : squares) {
       square.draw();
