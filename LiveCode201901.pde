@@ -19,6 +19,7 @@ class Square {
   float x, y, z;
   color c;
   float rx, ry, rz;
+  float dx, dy, dz;
   
   Square() {
     x = random(100);
