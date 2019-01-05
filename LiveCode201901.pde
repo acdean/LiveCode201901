@@ -31,7 +31,7 @@ class Square {
   Square() {
     x = random(100);
     y = random(100);
-    z = -200;
+    z = -300;
     c = color((int)random(192, 256), (int)random(192, 256), (int)random(192, 256));
     rx = random(TWO_PI);
     ry = random(TWO_PI);
@@ -48,14 +48,15 @@ class Square {
     pushMatrix();
     noStroke();
     fill(c);
+    translate(0, 0, z);
     rotateX(rx);
     rotateY(ry);
     rotateZ(rz);
     beginShape();
-    vertex(-SIZE, -SIZE, z);
-    vertex(-SIZE, SIZE, z);
-    vertex(SIZE, SIZE, z);
-    vertex(SIZE, -SIZE, z);
+    vertex(-SIZE, -SIZE, 0);
+    vertex(-SIZE, SIZE, 0);
+    vertex(SIZE, SIZE, 0);
+    vertex(SIZE, -SIZE, 0);
     endShape();
     popMatrix();
     z++;
