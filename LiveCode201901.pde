@@ -52,7 +52,7 @@ class Square {
     pushMatrix();
     noStroke();
     fill(c);
-    translate(0, 0, z);
+    translate(x, y, z);
     rotateX(rx);
     rotateY(ry);
     rotateZ(rz);
