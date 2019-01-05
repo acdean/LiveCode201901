@@ -61,7 +61,7 @@ class Square {
     popMatrix();
     z++;
     println(z);
-    if (z > 0) {
+    if (z > 100) {
       z = -400 + random(300);;
     }
   }
