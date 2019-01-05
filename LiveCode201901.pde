@@ -80,10 +80,10 @@ class Square {
     rotateY(ry);
     rotateZ(rz);
     beginShape();
-    vertex(-SIZE, -SIZE, 0);
-    vertex(-SIZE, SIZE, 0);
-    vertex(SIZE, SIZE, 0);
-    vertex(SIZE, -SIZE, 0);
+    vertex(-s, -s, 0);
+    vertex(-s, s, 0);
+    vertex(s, s, 0);
+    vertex(s, -s, 0);
     endShape();
     popMatrix();
   }
