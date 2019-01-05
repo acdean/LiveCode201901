@@ -16,6 +16,15 @@ void setup() {
 }
 
 void draw() {
+  
+  // PJOGL 2.2.1, 30b7
+  GL gl = ((PJOGL)beginPGL()).gl.getGL();
+
+  // additive blending
+  gl.glEnable(GL.GL_BLEND);
+  gl.glBlendFunc(GL.GL_SRC_ALPHA, GL.GL_ONE);
+  gl.glDisable(GL.GL_DEPTH_TEST);
+  
   background(0);
   pushMatrix();
   for (Square square : squares) {
